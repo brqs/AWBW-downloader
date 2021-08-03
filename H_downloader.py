@@ -379,7 +379,7 @@ class AW_Game (object):
         if not os.path.exists (asdir):
             shutil.copytree (self.savedir, os.path.join(dest_dir, self.savedir))
 
-def batch_save (new_list = [], dest_dir = 'E:/AwOnly/semiwar/', retry_old = True):
+def batch_save (new_list = [], dest_dir = '/semiwar', retry_old = True):
     '''
     '''
     requests.packages.urllib3.disable_warnings()
@@ -415,6 +415,6 @@ def batch_save (new_list = [], dest_dir = 'E:/AwOnly/semiwar/', retry_old = True
      
 if __name__ == '__main__':
     
-    dest_dir = 'E:'
+    dest_dir = '/semiwar'
     new_list = [376037, 370930, 376711, 378265]
     batch_save (new_list, dest_dir, False)
