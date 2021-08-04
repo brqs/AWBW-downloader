@@ -32,3 +32,10 @@ jobs:
       - name: Update posts #更新
         run: |
           python H_downloader.py
+          git config --global user.name "brqs"
+          git config --global user.email "3447851674@qq.com"
+          git add .
+          git commit -m "回传"
+          git push origin main
+          git pull --rebase origin main
+          git push origin main
