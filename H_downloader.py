@@ -415,6 +415,6 @@ def batch_save (new_list = [], dest_dir = '/semiwar', retry_old = True):
      
 if __name__ == '__main__':
     
-    dest_dir = '/semiwar'
+    dest_dir = 'save'
     new_list = [381974]
     batch_save (new_list, dest_dir, False)
